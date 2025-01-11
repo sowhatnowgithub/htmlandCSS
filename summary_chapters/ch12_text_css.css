@@ -1,0 +1,76 @@
+body {
+    background-color: cadetblue;
+}
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+p,li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight:lighter;
+    font-style: italic;
+    font-stretch: expanded;
+}
+p b{
+    font-weight: bolder;
+}
+li b {
+    font-weight: bolder;
+}
+
+i{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: bolder;
+    color:blue
+}
+
+#blink {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+
+    text-decoration: underline;
+}
+#blink:hover{
+    color: black;
+    text-decoration: none;
+}
+h3 {
+    font-size: 25px;
+}
+.author {
+    text-align: right;
+}
+#drop {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(6, 115, 155);
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 9px 8px 6px rgb(120, 190, 255);
+}
+a:link {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: red;
+    text-decoration: none ;
+}
+a:visited {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: green;
+}
+#sai {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+    font-size:48px;
+    text-align: center;
+    background-color: rgb(188, 222, 252);    
+    text-shadow: 8px 8px 4px red;
+    letter-spacing: 6px;
+}
+#sai:hover{
+    color:rgb(0, 2, 3);
+    background-color: rgb(162, 237, 212);
+    text-align:left;
+    text-shadow: -8px -8px 4px green;
+}

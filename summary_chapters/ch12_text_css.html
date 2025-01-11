@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titLe>Text_CSS</titLe>
+        <meta http-equiv="author"
+        content="Sai">
+        <link href="ch12_text_css.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <p id="sai">SAI</p>
+        <h1 id="blink">Text Style manipulation using CSS</h1>
+        <p class="author">Author: <i>Sai</i></p>
+        <img src="images/img24.png" alt="picture depecting the text parameters like ascender and descender" height="200px">
+        <p>There are mainly two ways you can affect the text</p>
+        <p>Those that directly affect the font and its appearance (including the typerface, whether it is regular, bold, italic and size of the text)</p>
+        <p>Those that would have the same effect on text no matter what font you were using (including the color of the text and the spacing between words and letters)</p>
+        <ol>
+            <h3>1.TYPEFACE TERMINOLOGY</h3>
+            <p><b>Family</b>: attribute <i>font-family</i></p>
+            <li><b>SERIF</b>: <br>These fonts have extra details on the end</li>
+            <li><b>SANS-SERIF</b>: <br>These fonts have much cleaner to look at</li>
+            <li><b>MONOSPACE</b>: <br>These have same width between letters of font </li>
+        </ol>
+        <ol>
+            <p>2.More aspects about the text</p>
+            <li><b>WEIGHT</b>: attributw <i>font-weight</i> <ul>
+                <li>lighter</li>
+                <li>medium</li>
+                <li>bold</li>
+                <li>bolder</li>
+            </ul></li>
+            <li><b>STYLE</b>: attribute <i>font-style</i> <ul>
+                <li>normal</li>
+                <li>italic</li>
+                <li>oblique</li>
+            </ul> </li>
+            <li><b>STRETCH</b>: <i>font-stretch</i> <ul>
+                <li>Condensed</li>
+                <li>Regular</li>
+                <li>Extended</li>
+            </ul></li>
+            <h3>Choosing a typerface</h3>
+            <li><b>Cursive</b></li>
+            <li><b>Fantasy</b>: These are usually used for titles and not for the entire body</li>
+            <h3>1.Unit Of Type Size</h3>
+            <p>Size: attribute <i>font-size</i></p>
+            <ol>
+                <li><b>Pixels</b>: These are constant</li>
+                <li><b>Percentages</b>: This is relative to the 16px that is default to browser</li>
+                <li><b>EMS</b>: This is relative to parent size</li>
+            </ol>
+            <h3>2.More Font Choice</h3>
+            <p>1.@font-face</p>
+            <p>Ex: <a href="images/img22.png" alt="using @font-face to download the font" target="_blank" >Screenshot</a></p>
+            <h3>2.Understand Font Formats</h3>
+            <p>Ex: <a href="images/img23.png" alt="using format to have support for various browsers" target="_blank">Screenshot</a></p>
+            <h3>3.UpperCase and Lowercae</h3>
+            <p><b>transform</b> attribute <i>text-transform</i></p>
+            <ul>
+                <li><i>text-transform: uppercase</i></li>
+                <li><i>text-transform: lowercase</i></li>
+                <li><i>text-transform: capitalize</i></li>
+            </ul>
+            <h3>4.Underline and Strike</h3>
+            <p><b>decoration</b>: attribute <i>text-decoration</i></p>
+            <ul>
+                <li><i>text-decoration: none</i></li>
+                <li><i>text-decoration: underline</i></li>
+                <li><i>text-decoration: overline</i></li>
+                <li><i>text-decoration: line-through</i></li>
+                <li><i>text-decoration: blink</i> - not working in chrome when i tried date:20/12/2024</li>
+            </ul>
+            <h3>5.Leading (ledding)</h3>
+            <p><b>lenght between two lines of text</b>: attribure <i>line-height</i></p>
+            <h3>6.Letter and word spacing</h3>
+            <p>attributes are <i>letter-spacing</i> and <i>word-spacing</i></p>
+            <p>We can use <i>em</i> to be relative according to web browser specification</p>
+            <p><b>kerning</b> is the term typographers use to say the distance between each letter</p>
+            <h3>7.Alignments</h3>
+            <p><i>text-align</i></p>
+            <ol>
+                <li><i>text-align: left</i></li>
+                <li><i>text-align: right</i></li>
+                <li><i>text-align: center</i></li>
+                <li><i>text-align: justify</i>: 
+                    This indicates that every line in
+                    a paragraph, except the last line,
+                    should be set to take up the full
+                    width of the containing box.</li>
+            </ol>
+            <h3>8.Vertical Alignment</h3>
+            <p>Attribute: <i>vertical-align</i></p>
+            <p>Ex: <a href="images/img25.png" alt="image about definition of Vertical Alginment attribute" target="_blank">Use Case</a></p>
+            <ol>
+                <li><i>vertical-align: text-top</i></li>
+                <li><i>vertical-align: baseline</i></li>
+            </ol>
+            <h3>9.Indenting Text</h3>
+            <p>attribute: <i>text-indent</i>: this lets you indent the text</p>
+            <p>It takes px or em as inputs</p>
+            <p>Ex: <a href="images/img26.png" alt="image of Indentingtext using css" target="_blank">Use Case</a></p>
+            <h3>10.Drop Shadow</h3>
+            <p>attribute: <i>text-shadow</i></p>
+            <p>Ex: <a href="images/img27.png" alt="image of text-shadow attribute use case" target="_blank" >Use case and definition</a></p>
+            <p>This takes four values, first three are offset and fourth is color of the offset</p>
+            <h2 id="drop">SHADOW</h2>
+            <h3>11.First Letter or Line</h3>
+            <p>These are not properties, they are <b>pseudo-elements</b></p>
+            <p>You specify the pseudo-elements at the end of the selector and then specify the declaration as you would normally for any other element</p>
+            <p>Example->CSS : S<i>p.intro:first-letter { }</i></p>
+            <h3>Style Links</h3>
+            <p>We can also style the links, by using psuedo-class just like pseudo-elements</p>
+            <p>Ex: <i>a:link {}</i> - using <b>:link</b> we can now change the tag style <b>a</b></p>
+            <p>Ex: <i>a:visited {}</i> - using <b>:visited</b> we can now change the anchor tag, after it has been used</p>
+            <a href="google.com" alt="goes to google" title="goes to google" target="_blank">Google</a>
+            <a href="yahoo.com">yahoo</a>
+            <h3>Responding To Users</h3>
+            <p>These are also <b>psuedo-class</b></p>
+            <ol>
+                <li><b>:hover</b></li>
+                <li><b>:active</b></li>
+                <li><b>:focus</b> - Focus occurs when a browser
+                    discovers that you are ready to
+                    interact with an element on the
+                    page. For example, when your
+                    cursor is in a form input ready
+                    to accept typing, that element
+                    is said to have focus</li>
+            </ol>
+            <h3>ATTRIBUTE SELECTORS</h3>
+            <p>Ex: <a href="images/img28.pnng" alt="Image containing list of selector attributes" target="_blank" >screenshot</a></p>
+        </ol>
+    </body>
+</html>

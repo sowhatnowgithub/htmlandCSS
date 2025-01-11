@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boxes</title>
+        <meta http-equiv="author"
+        content="sai">
+        <link href="ch13_boxes.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Boxes</h1>
+        <p>Everything in html acts like a box, hence controlling the features of the box is goverened by the following</p>
+       <ol>
+        <i>        Attributes controlling the dimensions of the box
+        </i>
+        <li>width, height</li>
+        <li>min-width,max-width, min-height, max-height</li>
+        <p>As the name suggests we can control the dimensions of the box</p>
+       </ol>
+       <h3>Overflowing Content</h3>
+       <p><i>overflow</i> attribute is used to control the content </p>
+       <p>It takes two values, <b>hidden</b> and <b>scroll</b>, this means that if the text is not within the dimensions, what to do with the other text, hide them or make them into a scroll</p>
+       <h3>Border, Margin, Padding</h3> 
+       <p>Ex: <a href="images/img28.png"  alt="this is an image containg the definition of border,margin and padding" target="_blank">ScreenShot</a></p>
+       <h4>Border</h4>
+       <ol>
+        properties to set the border
+        <li><i>border-width</i> or 
+            You can control individually by using
+            <ul>
+                <li><i>border-top-width</i></li>
+                <li><i>border-left-width</i></li>
+                <li><i>border-right-width</i></li>
+                <li><i>border-bottom-width</i></li>
+            </ul>
+        </li>
+        <li><i>border-style</i>: this will set how the border will looks
+            or You can do it individually like above
+            <ul>
+                <li><i>border-top-style</i></li>...
+            </ul>
+        </li>
+        <li><i>border-color</i>: Same like above u can do it individually as well</li>
+        <li>SHORTHAND - <i>border</i> - With this we can do all like color, width, style in one place <br>
+        <a href="images/img29.png">Screenshot</a>
+        </li>
+       </ol>
+       <h4>Padding</h4>
+       <p><i>padding</i> property is used to pad the content in the text</p>
+       <p>similar you can use padding-top etc.. just like border</p>
+       <h4>Margin</h4>
+       <p><i>margin</i> is the property used to set the margin</p>
+       <h3>Centering Content</h3>
+       <p><i>text-align: center</i></p>
+       <h3>Changing Inline/block</h3>
+       <p><i>display</i> property allows you to turn an inline element to block or vice versa, by setting <i>display:inline</i> will make the elements to turn a block into inline</p>
+       <p><i>display:block</i> will turn an inline to block</p>
+       <p><i>display:none</i> will not show in the page, but can be viewed in the source page</p>
+       <p><i>display:inline-block</i> this will make a block-level element to flow like an inline element and retaing the other features of block-level elemets</p>
+       <h3>Hidind Boxes</h3>
+       <p><i>visibility</i> property allows you to make an box hidden, but it will be shown as a space</p>
+       <p>Ex: <a href="images/img30.png" alt="image showing the use of visibility property" target="_blank">Screenshot</a></p>
+       <h2>The folllowing are introduced in css3</h2>
+       <p>For older browsers to recognise the following you have to add -moz- and -webkit- Ex: <a href="images/img32.png" target="_blank" >Screenshot</a></p>
+       <h3>Border Images</h3>
+       <p><i>border-image</i> - <a href="images/img31.png" target="_blank">definition</a></p>
+       <h3>Box Shadows</h3>
+       <p><i>box-shadow</i> - this is to create a shadow effect, read the use cases <a href="images/img32.png" target="_blank" >Def and other values</a> </p>
+       <p><i>box-shadow: inset 0px 0px 3px 4px color</i></p>
+       <h3>Rounded Corners</h3>
+       <div id="corners">
+        <p><i>border-radius</i> - This is the border-radius property that takes the value in px</p>
+        <ul>
+         <p>To specify the specific part to have radius</p>
+         <li><i>border-top-right-radius</i></li>
+         <li><i>border-top-left-radius</i></li>
+         <li><i>border-bottom-right-radius</i></li>
+         <li><i>border-bottom-left-radius</i></li>
+        </ul>
+       </div>
+
+       <h3>Examples:</h3>
+        <ul class="navbar">
+            <li>Home</li>
+            <li>Store</li>
+            <li>Trends</li>
+            <li class="hidden">Cart</li>
+            <li>Contact Us</li>
+        </ul>    
+
+        <div class="box1">
+
+        </div>
+        <div class="box">
+            <p>The Moog company pioneered the commercial
+                manufacture of modular voltage-controlled
+                analog synthesizer systems in the early
+                1950s</p>
+        </div>
+
+        <table border="2">
+            <tr>
+                <th>Photo</th>
+                <th class="desc">Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="images/img2.jpg" alt="roses pink" width="200"></td>
+                <td class="desc">Roses are representaion of beauty</td>
+                <td>$14 per rose</td>
+            </tr>
+            <tr>
+                <td><img src="images/img3.jpg" alt="rose red" width="200"></td>
+                <td class="desc">Red Rose is tender to view</td>
+                <td>$12 per rose</td>
+            </tr>
+        </table>
+        <h2>Fender Mustang</h2>
+<p>The Fender Mustang was introduced in 1964 as the
+basis of a major redesign of Fender's ...</p>
+<h2>Fender Stratocaster</h2>
+<p>The Fender Stratocaster or "Strat" is one of the
+most popular electric guitars of all time ...</p>
+<h2>Gibson Les Paul</h2>
+<p>The Gibson Les Paul is a solid body electric
+guitar that was first sold in 1952 ...</p>
+    </body>
+</html>

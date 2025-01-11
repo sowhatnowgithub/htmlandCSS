@@ -1,0 +1,94 @@
+body {
+    background-color: silver;
+}
+
+div.box {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cadetblue;
+    background-color:beige;
+    height: 75%; /* here 75% of parent elements height that is div */
+    width: 75%;
+    border-bottom: 1px solid red;
+    border-radius: 3px;
+    margin: auto;
+}
+th {
+    text-align: left;
+}
+td.desc {
+    vertical-align: text-top;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 5px;
+    margin: 0px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+h2 {
+    line-height: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color:brown;
+}
+h2:first-letter {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: pink;
+}
+h2~p {
+    color: rgb(231, 11, 213);
+}
+ol i {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    
+}
+
+p i {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bolder;
+}
+.navbar li {
+    margin-left: 10px;
+    display: inline;
+    margin-right: 10px;
+}
+.hidden {
+    display: none;
+}
+
+div.box1 {
+    background-color: red;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px red solid;
+    box-shadow: inset 0px 0px 2px 4px black;
+}
+
+#corners {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+#corners ul {
+    border: 3px solid pink;
+    border-radius: 25px;
+
+}
+#corners li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    text-align: center;
+    list-style-type: none;
+
+}
+

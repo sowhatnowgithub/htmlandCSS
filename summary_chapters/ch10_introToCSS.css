@@ -1,0 +1,28 @@
+* {
+    /*
+    this is a universal selector, which means all elemets
+    */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3 {
+    /*
+    THis is a type selector, means directly effecting elements
+    */
+    color:aquamarine;
+}
+
+.note {
+    /*
+    This is the way 
+    */
+
+}
+
+#introduction{
+    /* this selects the id attribute of that elemetns */
+}
+
+li>a {
+
+}

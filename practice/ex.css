@@ -1,0 +1,33 @@
+body{
+    background-color:black;
+    color: aliceblue;
+}
+.parent > p {
+    font-family: 'Courier New', Courier, monospace;
+    /* This is the child selector, */
+}
+
+.parent p{
+    color:bisque;
+    /* this is the descendant selector */
+}
+
+h3+p {
+    color: antiquewhite;
+}
+
+p.parent{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3+p {
+    color: blue;
+    /* This adjacent css selector lets the first element specified */
+}
+p.parent~p{
+    color: aquamarine;
+    /* THis general sibling selector lets the all the p tags after the specified tag*/
+}
+p#important {
+    color:blue !important;
+    /* This tell that it has more priority*/
+}

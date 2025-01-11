@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- this is used to indicate the version of html used is 5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="description"
+    content="This page is about extra markup discussed in the chapter-08 of the book, Jon Duckett "
+    />
+    <meta name="keywords"
+    content="block level elements,inline elements, div, span, iframe, meta"
+    />
+    <meta name="robots"
+    content="nofollow"
+    />
+    <meta http-equiv="author"
+    content="Sai"
+    />
+    <meta http-equiv="pragma"
+    content="no-cache"
+    />
+    <meta http-equiv="expires" 
+    conten="Fri, 05 Apr 2025 23:59:59 GMT" 
+    /> <!-- remeber to use the above format to write the content for value expires-->
+
+</head>
+<body>
+<h3><strong>id and class</strong></h3>
+<p>These are used in identfication of elements</p>
+<h3>block level elements</h3>
+<p>The elements which will appear on a new line like <b>li, p, ul, h1</b> and so on</p>
+<h3>inline elements</h3>
+<p>Ex:<b>em,b,strong,i</b></p>
+<h3>div is a block level element</h3>
+<p>One of the most important concept in the old front end dev</p>
+<div id="header">
+    <img src="images/bell-5997134_1280.png" alt="bell icon with text subscribe" width="300">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="works.html" >Works</a></li>
+    </ul>
+</div><!-- end of header -->
+<h3>span is a inline element</h3>
+<p>span is similar to div</p>
+<p>Lorem ipsum dolor<span id="span_">sit amet consectetur adipisicing elit. Id provident ipsam</span>  quod ut aut praesentium ex</p>
+<h3>iframe</h3>
+<p><b>iframe</b>: inline frame, this allows us to see another webpage in small place defined by height and width</p>
+
+<iframe
+width="450"
+height="350"
+src="http://maps.google.co.uk/maps?q=moma+new+york
+&amp;output=embed"
+frameborder="0"
+scrolling="no"
+>
+</iframe>
+<ol>
+    <li><b>frameborder</b>: it will be removed in html5</li>
+    <li><b>scrolling</b>: it will be removed in html5</li>
+    <li><b>seamless</b>: This will be added in the html5</li>
+
+</ol>
+
+<h3>meta</h3>
+<p>This lives in the <b>head</b> of the html code, it is a <b>empty element</b></p>
+<ol>
+    <li><b>name and content</b> are the important attributes of the <b>meta</b> tag, these two goes together</li>
+    <ul>
+        <li><b>description</b>: value of attribute <b>name</b>, this means the attribute <b>content</b> will be about <b>description</b> of the page</li>
+        <li><b>keywords</b>: value of attribute <b>name</b></li>
+        <li><b>robots</b>: value of attribute <b>name</b>, <b>content</b> can take value <b>noindex</b> which means the page cannot be added to search engine and <b>nofollow</b> value implies it can be added to search engine but cannot add the pages it links to </li>
+    </ul>
+    <li><b>http-equiv</b> is another attribute that is used along with <b>content</b></li>
+    <ul>
+        <li><b>author</b> is the value taken by attribute <b>http-equiv</b>, then <b>content</b> takes the <q><i>author</i></q> name</li>
+        <li><b>pragma</b> is the value taken by attribute <b>http-equiv</b>, the value <b>no-cache</b> tells the browser not to canche it locally</li>
+        <li><b>expires</b> is the value taken by attribute <b>http-equiv</b>, this value tells the browser when the page will <q>expires</q></li>
+    </ul>
+    <li><p>The value of the name
+        attribute is the property you
+        are setting, and the value of the
+        content attribute is the value
+        that you want to give to this
+        property.</p></li>
+    <li>See the <b>head</b> section of the code</li>
+</ol>
+
+<h3>escape characters</h3>
+<p>There are some characters that are used in and reserved by HTML code, for example angle brackets hence to use this we use <q>escape</q> characters</p>
+<p>See the source code for the escape character</p>
+<table border="3" cellspacing="3" cellpadding="5">
+    <tr>
+        <th>character</th>
+        <th>html character to be written</th>
+    </tr>
+    <tr>
+        <td>left-angled character</td>
+        <td> &lt; or &#60;  </td>
+    </tr>
+    <tr>
+        <td>copyright</td>
+        <td>&copy; or &#169; </td>
+    </tr>
+    M<tr>
+        <td>ampersand</td>
+        <td>&amp; or &#38;</td>
+    </tr>
+</table>
+<h3><b><i><a href="images/escape_characterts.png">GOTO escape characters</a>
+</i></b></h3>
+</body>
+</html>

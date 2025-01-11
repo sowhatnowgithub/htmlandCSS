@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro CSS</title>
+        <link href="ch10_introToCSS.css" type="text/css" rel="stylesheet">
+        <style type="text/css">
+           h1,h2,h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(123,120,22);
+           } 
+        </style>
+    </head>
+    <body>
+        <h3>selector and declaration</h3>
+        <p>These are really important for a <em>css</em> file</p>
+        <p><a href="images/img13.png" alt="selector and declaration image" target="_blank">Screeshot</a></p>
+        <ul>
+            <li><b>selector</b>: These indicate the element that rule has to be applied</li>
+            <li><b>declaration</b>: Indicates how the elements referred to in the selector should be styled.</li>
+        </ul>
+        <h3>Property and Value</h3>
+        <p>These are used to define the <strong>declaration</strong> Ex: <a href="images/img14.png" alt="Image showing property and value of a css declaration" target="_blank">Screenshot</a></p>
+        <ul>
+            <li><b>declaration</b> is separated into two parts <strong>property</strong> and <strong>value</strong></li>
+            <li><b>property</b>: This indicates the aspect of the element to change</li>
+            <li><b>values</b>: Specify the setting you want to choose for the property</li>
+        </ul>
+        <h3>Add stylesheet to your html file</h3>
+        <p>Use <strong>link</strong> tag in the <strong>head</strong> section of the html and use <strong>href</strong> attribute to store the <em>filepath</em> of the <strong>css</strong> file, use <strong>rel</strong> attribute and give the value <strong>stylesheet</strong> to specify the relation and <br /> <strong>type</strong> attribute and give it the value <strong>text/css</strong></p>
+        <h4>Inline CSS</h4>
+        <p>The above method is used in linking html to another <strong>css</strong> file</p>
+        <p>WHere as the inline css method can be achieved by using<b> style</b> tags in the <strong>html</strong> code</p>
+        <p><b>style</b> tag is used with attribute <strong>type</strong> which takes the value <em>text/css</em> and inbetween these opening and closing tags, we use same <b>selector and declaration</b></p>
+        <h3>CSS selectors </h3>
+        <blockquote>
+            <p>Ex: <a href="images/img15.png" alt="selectors types-images, table is shown to show the css selector and defintion and ex" target="_blank">Screenshot</a></p>
+        </blockquote>
+        <h1 id="top">Kitchen Garden Calendar</h1>
+        <p id="introduction">Here you can read our
+         handy guide about what to do when.</p>
+         <h2>Spring</h2>
+         <ul>
+            <li><a href="mulch.html">
+            Spring mulch vegetable beds</a></li>
+            <li><a href="potato.html">
+            Plant out early potatoes</a></li>
+            <li><a href="tomato.html">
+            Sow tomato seeds</a></li>
+            <li><a href="beet.html">
+             Sow beet seeds</a></li>
+            <li><a href="zucchini.html">
+            Sow zucchini seeds</a></li>
+            <li><a href="rhubarb.html">
+            Deadhead rhubarb flowers</a></li>
+        </ul>
+        <p class="note">
+        This page was written by
+        <a href="mailto:ivy@example.org">
+        ivy@example.org</a> for
+        <a href="http://www.example.org">Example</a>.
+        </p>
+        <p>
+         <a href="#top">Top of page</a>
+        </p>
+
+        <h2>Rules for cascading</h3>
+        <h3>1.Specific</h3>
+       <p>If one selector is more specific
+        than the others, the more
+        specific rule will take precedence
+        over more general ones. <br>In this
+        example:<br>
+        <i>h1 is more specific than * <br>
+            p b is more specific than p<br>
+            p#intro is more specific than p</i> </p>
+        <h3>2.THe last rule</h3>
+        <p>If the two selectors are identical,
+            the latter of the two will take
+            precedence</p>
+        <p>Ex: <a href="images/img16.png" alt="How CSS Rules CASCADE" target="_blank" >Screenshot</a></p>
+        <hr >
+        <h2>Inheritance</h2>
+        <p>Ex: <a href="images/img17.png" alt="image of inheritance definition" target="_blank">Screenshot</a></p>
+        <p> If you specify the font-family
+            or color properties on the
+            <b>body</b> element, they will apply
+            to most child elements. This is
+            because the value of the
+            font-family property is
+            inherited by child elements. It
+            saves you from having to apply
+            these properties to as many
+            elements (and results in simpler
+            style sheets).</p>
+        <p>You can compare this with
+            the background-color or
+            border properties; they are <b>not
+                inherited</b>  by child elements. If
+            these were inherited by all child
+            elements then the page could
+            look quite messy.</p>
+        </body>
+
+</html>

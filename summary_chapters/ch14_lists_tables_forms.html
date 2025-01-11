@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS: Forms</title>
+        <meta http-equiv="author" content="sai" />
+        <link
+            href="ch14_lists_tables_forms.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <h2>BULLET POINT STYLES</h2>
+        <p>
+            <i>list-style-type</i>: With this property we can change the style
+            of bullet point also known as <b>marker</b>
+        </p>
+        <h3>Unordered Lists</h3>
+        <ul>
+            <li id="none">
+                <i>list-style-type: none</i> - this will remove the marker
+            </li>
+            <li id="disc">
+                <i>list-style-type: disc</i> - this will set it to dark circle
+            </li>
+            <li id="circle">
+                <i>list-style-type: circle</i> - border dark and white inside
+            </li>
+            <li id="square">
+                <i>list-style-type: square</i> - this will set it to square
+            </li>
+        </ul>
+        <h3>Ordered Lists</h3>
+        <ol>
+            <li id="decimal"><i>list-style-type: decimal</i></li>
+            <li id="decimal-leading-zero">
+                <i>list-style-type: decimal-leading-zero</i>
+            </li>
+            <li id="lower-alpha">
+                <i>list-style-type: lower-alpha</i> - this stands lower alphabet
+            </li>
+            <li id="upper-alpha"><i>list-style-type: upper-alpha</i></li>
+            <li id="lower-roman"><i>list-style-type: lower-roman</i></li>
+            <li id="upper-roman"><i>list-style-type: upper-roman</i></li>
+        </ol>
+        <h2>Images For Bullets</h2>
+        <p>
+            <i>list-style-image</i> - this property is used to the image as
+            <b>markers</b>
+        </p>
+        <ul id="bullet-image">
+            <li>Opera</li>
+            <li>Rock</li>
+            <li>Ballet</li>
+            <li>Softcore</li>
+            <li>Melo-drama</li>
+        </ul>
+        <h2>Positioning The Marker</h2>
+        <p><i>list-style-marker</i></p>
+        <p>
+            by setting the propert value to <b>outside</b>, the marker will be
+            outside
+        </p>
+        <ol id="outside">
+            <li>That idol, black eyers and</li>
+            <li>Gracious Son of pan...</li>
+            <li>When the world is reduced...</li>
+        </ol>
+        <p>by setting the property value to <b>inside</b></p>
+        <ul id="inside">
+            <li>Once, if my memory serves ..</li>
+            <li>Hadn't I once a youth ....</li>
+            <li>Autumn already ...</li>
+        </ul>
+        <h3>List ShortHand</h3>
+        <p><i>list-style</i> - this is a shorthand notation to use it</p>
+        <hr />
+        <h2>TABLE PROPERTIES</h2>
+        <ol>
+            <li><i>width</i> - to set the width of the table</li>
+            <li><i>padding</i></li>
+            <li><i>text-transform</i></li>
+            <li><i>letter-spacing, font-size</i></li>
+            <li>border-top, border-bottom</li>
+            <li>text-align</li>
+            <li>background-color</li>
+            <li>:hover - psuedoclass</li>
+        </ol>
+        <ol>
+            <b>Practices for better tables</b>
+            <li>Give Cell Padding</li>
+            <li>Distinguish Heading</li>
+            <li>Shade Alternate Rows</li>
+            <li>Align Numerals</li>
+        </ol>
+        <table id="t1">
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Reserve Price</th>
+                <th>Current Bid</th>
+            </tr>
+            <tr>
+                <td>E.E Cummings</td>
+                <td>Tulips and Chimneys</td>
+                <td class="money">$2,000</td>
+                <td class="money">$2,642</td>
+            </tr>
+            <tr class="even">
+                <td>Charles d'Orleans</td>
+                <td>Poemes</td>
+                <td class="money"></td>
+                <td class="money">$5,866.00</td>
+            </tr>
+            <tr>
+                <td>T.S. Eliot</td>
+                <td>Poems 1909-1925</td>
+                <td class="money">$1,250.00</td>
+                <td class="money">$8,499.00</td>
+            </tr>
+            <tr class="even">
+                <td>Sylvia Plath</td>
+                <td>The Colossus</td>
+                <td class="money"></td>
+                <td class="money">$1,031.72</td>
+            </tr>
+        </table>
+        <h3>Border on empty cells</h3>
+        <p><i>empty-cells</i></p>
+        <ol>
+            <li><i>empty-cells: show</i> - this shows border of empty cells</li>
+            <li><i>empty-cells: hide</i> - this hides the the border</li>
+            <li>
+                <i>empty-cells: inherit</i> - if it is nested table, this tells
+                to obey the rules of containing table
+            </li>
+        </ol>
+        <h3>GAPS BETWEEN CELLS</h3>
+        <p><i>border-spacing, border-collapse</i></p>
+        <p>
+            <i>boorder-collapse: collapse</i> - this property should be used in
+            <i>table</i>
+        </p>
+        <table class="t2">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <table class="t3">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <h2>Forms</h2>
+        <h3>styling text inputs</h3>
+        <ol>
+            <p>
+                The most commonly used properties for <i>input</i> selector are
+                :
+            </p>
+            <li><i>font-size</i></li>
+            <li><i>color</i></li>
+            <li><i>background-color</i></li>
+            <li><i>border</i></li>
+            <li><i>border-radius</i></li>
+            <li><i>padding</i></li>
+            <li>
+                <i>background-repeatL:no-repeat</i> THis tells the browser not
+                to tile the images
+            </li>
+            <li>
+                <i>background-position: value1(in px) value2(in px)</i> - value1
+                tells the distance from left , value2 distance from top
+            </li>
+            <li>
+                <i>display: block</i> this will set this element into an
+                block-level element
+            </li>
+            <li><i>margin</i></li>
+            <li><i>:focus</i> this psuedoclass can be used with</li>
+        </ol>
+        <form method="get">
+            <fieldset>
+                <legend>Technologies</legend>
+                <label for="emmail"></label>
+                <input type="text" name="email" id="email" />
+            </fieldset>
+        </form>
+        <h3>Styling Submit Buttons</h3>
+        <ol>
+            <li><i>color</i></li>
+            <li><i>text-shadow</i></li>
+            <li>
+                <i>border-bottom</i> - this is to set a 3d effect to the text
+            </li>
+            <li><i>background-color</i></li>
+        </ol>
+        <form method="get" action="http://index.com/sub.php">
+            <fieldset>
+                <legend>Register</legend>
+                <input type="submit" value="register" id="submit" />
+            </fieldset>
+        </form>
+        <form action="http://localhost/sub.php" id="newsletter">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+                <br />
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+                <br />
+                <input type="submit" value="SignUp" id="signup" />
+            </fieldset>
+        </form>
+        <h3>Aligning Form Controls: Problem</h3>
+        <form action="example.php">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+            </div>
+            <div>
+                <span class="title">Gender:</span>
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    checked="checked"
+                    id="radio"
+                />
+                <label for="m">Male</label>
+                <input type="radio" name="gender" value="female" id="radio" />
+                <label for="f">Female</label>
+            </div>
+            <div id="submit">
+                <input type="submit" value="register" />
+            </div>
+        </form>
+        <h2>Cursor Styles</h2>
+        <p><i>cursor</i> property is used to set the cursor style</p>
+        <ul id="copy">
+            <p><i>cursor</i> can take the following values</p>
+            <li><i>auto</i></li>
+            <li><i>crosshair</i></li>
+            <li><i>default</i></li>
+            <li><i>pointer</i></li>
+            <li><i>move</i></li>
+            <li><i>text</i></li>
+            <li><i>wait</i></li>
+            <li><i>help</i></li>
+            <li><i>url("cursor.gif")<i></li>
+        </ul>
+
+        <h2>Web Developer ToolBar</h2>
+        <p>This is web extension that is used to find html, css of a web pages</p>
+        <a href="images/img34.png" target="_blank" alt="its an image containing details of web developer toolbar">MoreDetails</a>
+    </body>
+</html>

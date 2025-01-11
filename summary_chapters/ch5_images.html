@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+<title>Title</title>
+</head>
+<body>
+<!--
+ To use images we use
+ <img /> this is an empty tag
+ IT should defnetily have these attributes
+
+ -->
+<h3 id="top">Images</h3>
+<p>To use images we use <q><i>img</i></q> which is an empty tag and should contain the following attributes</p>
+<hr />
+<dl>
+    <dt><b>src :</b></dt>
+    <dd>This is an attribute for img tag which has the relative or absolute URL path to the image</dd>
+    <dt><b>alt :</b></dt>
+    <dd>THis is an nessary attribute which is used by browser to identify the image and also for screen readers,<br /> even if image has no value, we should still add src and in quotes leave it empty</dd>
+    <dt><b>title : </b></dt>
+    <dd>This gives info about the images, if mouse pointer hovers over it</dd>
+    <dt><b>width :</b></dt>
+    <dd>This is an attribute to set width</dd>
+    <dt><b>height :</b></dt>
+    <dd>This is the attribute to set height</dd>
+    <dt><b>align :</b></dt>
+    <dd>This will decide how the text flow around the image</dd>
+</dl>
+
+<hr />
+<h2>Index</h2>
+<ol>
+    <li><a href="#block_inline_elements">Block and Inline Elements</a></li>
+    <li><a href="#align">align-attribute</a></li>
+    <li><a href="#rules_images">Three Rules For images in html for better Rendering</a></li>
+    <li><a href="#extra">More information regarding images</a></li>
+    <li><a href="#figure">figure-attribute</a></li>
+</ol>
+<hr />
+<!-- image adding -->
+<img src="images/img2.jpg" alt="pink roses" title="Bunch of pink roses" cite="https://pexel.com" width="300" height="400"
+/> <br />
+
+<p id="block_inline_elements">Images are shown in one of three ways bases on where img are set</p>
+<dl>
+    <dt>Block Elements</dt>
+    <dd>This means that the after every tag(block) like h1 or p there are always start after a new line</dd>
+    <dt>Inline Elements</dt>
+    <dd>This means that the tags are in between a tag for example b(bold) or i(italic) or em are usually in the p <br />which means these contents do not start with a new line rather the remainingg text or data adjusts them selves for these</dd>
+</dl>
+
+<p>Examples for Block Elemnts</p>
+<hr />
+<img src="images/img3.jpg" alt="roses"  height="100" />
+<p>This is how the text appears at a new element</p>
+<p>Examples for Inline Elements</p>
+<hr />
+<p><img src="images/img3.jpg" alt="roses"  height="100" />
+    This is how the images is shown</p>
+<hr />
+<p>This is the image <img src="images/img3.jpg" alt="pink roses" height="100"/> is shown</p>
+<hr />
+
+<h3 id="align">align</h3>
+<p> The align attribute is now removed in html5</p>
+<p>This is usually used as Inline elements cause the text is flown with respect to the value of the attribute of align</p>
+
+<dl>
+    <dt>align=left</dt>
+    <dd>This align entire text to the right of the image </dd>
+    <dt>align=middle</dt>
+    <dd>This will make the first line of the text in the middle of image and text is on right of the image</dd>
+    <dt>align=top</dt>
+    <dd>This will make the first line of the text in the top of the imagee and remaing text is below the image</dd>
+    <dt>align=bottom</dt>
+    <dd>This will make the first line of the text in the bottom of the imagee and remaing text is below the image</dd>
+
+</dl>
+<hr />
+<p><img src="images/img3.jpg" alt="pink rose" width="100" align="left"/> this is now more good, cause the image is oreinted towards left <br/> and the pink rose is now more good</p>
+<br />
+<hr />
+<p><img src="images/img3.jpg" alt="pink rose" width="100" align="middle" />the seed-bearing part of a plant, consisting of reproductive organs (stamens and carpels) that are typically surrounded by a brightly coloured corolla (petals) and a green calyx (sepals).</p>
+<hr />
+<br />
+<p>the text appearing with respect img <img src="images/img3.jpg" alt="pink rose" width="100" align="top" /> cause the next text will be below the image <br /> </p>
+<hr />
+<br />
+
+<h3 id="rules_images">Rules for images</h3>
+<dl>
+    <dt>1.<b>Choosing Right image format</b></dt>
+    <dd>
+        <ol>
+            <li><b>jpeg</b> : If the image has many colors</li>
+            <li><b>png or gif </b>: If the image is <strong>flat image</strong> i.e, if the image has only few dominant colors usually for logos</li>
+            <li><b>jpg's, gif's, png's</b> these are example of <b>bitmap</b> which means these are made up of a lot of miniature squares</li>
+
+            <li><b>Vector Images</b>: These are completely different from <b>bitmap</b> images, as these are formed by joining lines between two points</li>
+            <ul>
+                <li>The advantage of drawing line images we can change resolution without affecting quality</li>
+            </ul>
+            <li><b>SVG</b>: Scalable Vector Graphics is a new image format</li>
+        </
+        </ol>
+    </dd>
+    <dt>2.<b>Choosing Right size</b></dt>
+    <dd>
+        <ol>
+            <li>As wrong size would take lot space and rendering will result in distortion and such</li>
+            <li>ITs better to save image with the same resolution as the you would need it in the website as it would save time </li>
+        </ol>
+    </dd>
+    <dt>3.<b>Choosing right resolution</b></dt>
+    <dd>
+        <ol>
+            <li>using right resolution will save time in loading of the images</li>
+            <li><b>Resolution</b> of an image is the number of squares that fit within 1 inch * 1 inch size</li>
+            <li><b>ppi</b>: pixels per inch, 72 ppi are usually good resolution for an image</li>
+            </ol>
+    </dd>
+</dl>
+
+<h3 id="extra">A little bit more about images</h3>
+<h4>transparency :</h4>
+<ol>
+    <li><b>transparent GIF</b> </li>
+    <li><b>PNG</b></li>
+</ol>
+
+<h4>Categories of image</h4>
+<ol>
+    <li><b>straight</b>: This is the regular image <br /> <img src="images/img4.png" alt="a plis" width="100" /></li>
+    <li><b>diagonal</b>: <br /> <img src="images/img5.png" alt="rotated image of a plus " width="100"/></li>
+    <li><b>round</b>: <br /><img src="images/img6.png" alt="a square with round edges" width="100"/></li>
+    <li><b>semi-opaque</b>: <br/> <img src="images/img7.png" alt="a semi-opaque image" width="100"/></li>
+    <li><b>Drop-shadow</b>: <br /><img src="images/img8.png" alt="a square with a shadow" width="100" /></li>
+</ol>
+<hr />
+<h3 id="figure">figure in html5</h3>
+<blockquote>
+    <p>In <b>html5</b> a new atttribute is given for img tags that is <b>figure</b>, this is figure tags allows us to add a caption for the image and image and caption now belongs under a common flag called <b>figure</b> tag <br /> and <b>figcaption</b> is the tag used as <b>inline</b> element for the figure tag for the caption for the image</p>
+    <p>You can have many images in figure tag as longs as they have same caption</p>
+</blockquote>
+<figure>
+    <img src="images/img2.jpg" alt="A bunch of pink images" width="100"/>
+    <img src="images/img3.jpg" alt="a pink rose" width="100" />
+   <p> <figcaption>A Rose is the symbol of utmost representation of beauty and the dangers </figcaption>
+</figure></p>
+
+<hr />
+<a href="#top">Goto Top</a>
+</body>
+</html>

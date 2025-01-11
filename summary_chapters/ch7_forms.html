@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<!-- form is a element used to take info from the user-->
+<h1 id="top">Forms</h1>
+<p><b>form controls</b>, these are  responsible for the input of user, like what type of data, they are taking ex: integers, date, radio buttons, drop down, choices etc..</p>
+<p>To differentiate the inputs given by the user, the <b>html</b> stores the input of user as name-value pairs for use and for the transfer of data</p>
+<p>You should never change the name of a <b>form control</b> in a page unless
+  you know that the code on the server will understand this new value.</p>
+
+<hr />
+<h3>Index</h3>
+<ol>
+  <li><a href="#textarea"><strong>textarea</strong>: A inline tag, which gives a  box to write</a></li>
+  <li><a href="#radio"><strong>radio</strong></a></li>
+  <li><a href="#selectboxes"><strong>select boxes</strong></a></li>
+  <li><a href="#file"><strong>upload File</strong></a></li>
+  <li><a href="#submit"><strong>submit</strong></a></li>
+  <li><a href="#image">Use <strong>image</strong> as buttons</a></li>
+  <li><a href="#button_hidden">Use <strong>button</strong> and <strong>attribute</strong> value hidden</a></li>
+  <li><a href="#label">Use <strong>label</strong> to create relationship between elements</a></li>
+  <li><a href="#fieldset">Use html5 <strong>fieldset</strong> tag to group elements</a></li>
+  <li><a href="#required">Use <strong>required</strong> for form validation</a></li>
+  <li><a href="#date">Use <strong>date</strong></a></li>
+  <li><a href="#email_url">Use <strong>email</strong> and <strong>url</strong>  values for the attribute </a></li>
+  <li><a href="#search_placeholder">Use <strong>search</strong> value for the attribute <strong>type</strong> and <strong>placeholder</strong></a></li>
+</ol>
+<hr />
+<h2>Attributes of form element</h2>
+<ol>
+  <li><b>action</b>: This contains the URL to which the server-side request should be sent to</li>
+  <li><b>method</b>: This contains what type of request is supposed to be done, which takes <b>get or post</b>, default value is get if not specified</li>
+  <li><b>input</b>: This is an empty element which takes input and inline element of <b>form</b> tag</li>
+  <li><b>type</b>: Attribute of input tag, which says which type of data will the input be</li>
+  <li><b>name</b>: Attribute of input tag, which is the identity of the input</li>
+  <li><b>size</b>: attribute of input tag, this is old and it gives the input size</li>
+  <li><b>maxlength</b>: attribute of input tag, this tells us the maxsize of the input data</li>
+  <li><b>textarea</b>: this is an inline element for the <b>form</b> tag, which creates a text area</li>
+</ol>
+<hr />
+<h3 id="ex1">A basic example of a form</h3>
+<form action="http://example.com/subscriber.php" method="get">
+<p>This is where form control takes place</p>
+</form>
+<form action="http://example.com/login.php" method="get">
+<p>Username:
+    <input type="text" name="username" size="15" maxlength="30"/>
+</p>
+  <p>Password:
+  <input type="password" name="password" size="15" maxlength="30"/></p>
+  <p>Any remarks?</p>
+  <textarea name="comments" cols="23" rows="5" >Enter comments</textarea>
+</form>
+<hr />
+<h3 id="textarea">Text Area</h3>
+<from action="http://example.com/comments.php" method="post">
+  <p>Any Comments?</p>
+  <textarea name="comments" cols="20" rows="4">Enter Comments  </textarea>
+</from>
+<hr />
+<h3 id="radio">radio buttons</h3>
+<p><b>checked</b> attribute has the value <b>checked</b> when <b>radio</b> is the type of value of type, <br /> This <b>checked</b> should be present if the user has to select a choice</p>
+<p><b>value</b> attribute is given to the type <b>radio</b> ,when selected sends this value to the <b>action</b> URL</p>
+<hr />
+<form action="http://example.com/radio.php" method="get">
+  <p><b>Music Liked</b></p>
+  <input type="radio" name="music" value="KathiSera" checked="checked"><i>kathi Sera</i>
+  <input type="radio" name="music" value="AssaKoda"><i>Assa Koda</i>
+</form>
+<hr />
+<h3 id="checkbox">check boxes</h3>
+<p>This has same way like <b>radio</b> buttons</p>
+<hr />
+<form action="http://example.com/choice.php" method="get">
+  <p><b>Please select a choice</b></p>
+  <input type="checkbox" name="music" value="kathisera" checked="checked"> <i>kathi sera</i>
+  <input type="checkbox" name="music" value="assakoda"><i>Assa Koda</i>
+</form>
+<hr />
+
+<h3 id="selectboxes">Drop Down Box</h3>
+<p><b>Drop down box</b> also called a <b>select box</b> can choose one value from the <b>drop-down list</b></p>
+<p>This has a inline tag called <b>select</b> and <b>option</b> tags, similar to a list</p>
+<p><b>selected</b> is an attribute of the element <b>option</b>, which can take the value <b>selected</b>, if there should be a definite choice</p>
+<hr />
+<form action="http://example.com/dropdown.php">
+  <p><b>Music Liked</b></p>
+  <select name="music">
+    <option value="kathisera" selected="selected">Kathi Sera</option>
+    <option value="assakoda">Assa Koda</option>
+  </select>
+</form>
+<hr />
+
+<p>Bases on the use case, we have to choose <b>radio</b> or <b>select boxes</b></p>
+<ul>
+  <li><b>radio</b>: This can be choosen if all the options have to be shown at once</li>
+  <li><b>select boxes</b>: This can be choosen if there is a long list, like countries</li>
+</ul>
+<h4 >More attributes of select boxes</h4>
+<ul>
+  <li><b>size</b>: This attribute of the element <b>select</b>,<br/> this <b>size</b> value tells us at one instance how many values should be shown when the <b>select box</b> is displayed, its like no of rows of items to be displayed </li>
+  <form>
+    <p><b>please select your prefered device</b></p>
+    <select name="devices" size="2">
+      <option value="spotify" selected="selected">Spotify</option>
+      <option value="wynk">Wynk</option>
+      <option value="jiomusic">Jio Music</option>
+      <option value="primemusic">Prime Music</option>
+    </select>
+  </form>
+  <li><b>multiple</b> this is an attribute for the tag <b>select</b>, which allows the user to selcect more than one choice, the value for the attribute <b>multiple</b> is <b>multiple</b></li>
+  <form action="http://example.com/mutliple.php">
+    <select name="device" size="2" multiple="multiple">
+      <option value="spotify" selected="selected">Spotify</option>
+      <option value="wynk">Wynk</option>
+      <option value="jiomusic">Jio Music</option>
+      <option value="primemusic" selected="selected">Prime Music</option>
+    </select>
+  </form>
+</ul>
+
+<hr />
+<h3 id="file">File upload box</h3>
+<hr />
+<form>
+  <p>Please upload the pdf</p>
+  <input  type="file" name="file_input" /><br /><br />
+  <input type="submit" value="Upload">
+</form>
+<hr />
+<h3 id="submit">submit</h3>
+<form action="http://example.com/subsrcibe.php" >
+  <p>Please enter email :</p>
+  <input type="text" name="email" size="15" maxlength="30">
+  <input type="submit" name="submit" value="subscribe">
+</form>
+<hr />
+<h3 id="image">image buttons</h3>
+<p>U can add images as button by specifing src, height and width</p>
+<form action="http://example.com/image.php">
+  <p>Please enter your email to subscribe</p>
+  <input type="text" name="email" ><br />
+  <input type="image" src="images/bell-5997134_1280.png" height="40" alt="subscribe text with a bell image">
+</form>
+<hr />
+
+<h3 id="button_hidden">button and hidden</h3>
+<p><b>hidden</b> form control, allows the webpage author to set value to the form that user cannot see on the page, but can see on the view source</p>
+<form action="http://example.com/button_hidden.com">
+  <button><img src="images/bell-5997134_1280.png" height="30"/>😀😀😀</button>
+  <input type="hidden" name="bookmark" value="lyric">
+</form>
+<hr />
+<h3 id="label">Labelling form control</h3>
+<p><b>label</b> is primarily for the visually impaired and <b>for</b> attribute of the <b>label</b> tag, is used to indicate which id it belongs to</p>
+<p>For example:</p>
+<form>
+  <label>Age: <input type="text" name="age"/></label>
+  <br />Gender:
+  <input id="female" type="radio" name="gender" value="f" checked="checked">
+  <label for="female">F</label>
+  <input id="male" type="radio" name="gender"  value="m">
+  <label for="male" >M</label>
+  <input id="trans" type="radio" name="gender" value="t" />
+  <label for="trans">trans</label>
+</form>
+<hr />
+<h3 id="fieldset">Grouping Form Elements aka <strong>fieldset</strong></h3>
+<p><b>legend</b>: attribute of <b>fieldset</b> allows the title for the group</p>
+<form action="http://example.com/contact.php">
+  <fieldset>
+    <legend>Contact Details</legend>
+    <label>Name: <input type="text" name="name" /></label><br/><br />
+    Gender: <input type="radio" name="gender" value="f">F
+    <input type="radio" name="gender" value="M">M
+    <input type="radio" name="gender" value="T">Trans
+    <br /><br />
+    <label>Phone: <input type="text" name="phone" /></label><br /><br />
+    <label>Email: <input type="text" name="email" /></label><br /><br />
+    Country:
+    <select name="country" size="2">
+      <option value="india">India</option>
+      <option value="china">China</option>
+      <option value="Nepal">Nepal</option>
+      <option value="srilanka">Sri Lanka</option>
+      <option value="bhutan">Bhutan</option>
+    </select>
+    <br /><br />
+    Please Agree to out terms and conditions :
+    <input type="checkbox" name="consent" checked="checked" value="agreed">
+    <br /><br />
+    <input type="submit" value="Confirm details and send" />
+  </fieldset><br />
+</form>
+<hr />
+<h3 id="required">Form Validation aka <strong>required</strong></h3>
+<p><b>required</b> is the attribute used in the <b>input</b> tag to make sure the input is not empty, the value of this attribute <b>required</b> is <b>required</b></p>
+<form action="http://example.com/required.php">
+  <fieldset>
+    <legend>Login Credentials</legend>
+    <label for="username">Username: </label>
+    <input id="username" type="text" name="username" /><br /><br />
+    <label for="password">Password: </label>
+    <input id="password" type="password" name="password" required="required" />
+    <input type="submit" value="submit">
+  </fieldset>
+</form>
+<hr />
+<h3 id="date">date</h3>
+<form action="http://example.com/bookings" >
+  <label for="date">Departure Date</label>
+  <input type="date" id="date" name="date">
+  <input type="submit" name="submit">
+</form>
+<hr />
+<h3 id="email_url"><strong>email</strong> and <strong>url</strong> values of </h3>
+<form action="http://example.com/email_url.php">
+  <fieldset>
+    <legend>Email and Website URL</legend>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email"><br /><br />
+    <label for="url">URL</label>
+    <input id="url" type="url" name="url"/>
+    <input type="submit" value="submit">
+  </fieldset>
+</form>
+<hr />
+<h3 id="search_placeholder">search and placeholder</h3>
+<form action="http://example.com">
+  <label for="search">Search</label>
+  <input id="search" type="search" name="search" placeholder="Enter Keyword">
+  <input type="submit" value="search">
+</form>
+<hr />
+<a href="#top">Goto Top</a>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+<body>
+<!-- to create tables we need to know of three elements -->
+<h2>Table</h2>
+<ul>
+  <li><b>table</b>: this is a main tag to intiate a table </li>
+  <li><b>tr</b>: table row this is like <b>ol</b>(ordered list) this intiates the row</li>
+  <li><b>td</b>: table data this is like <b>li</b> this intiates the column value</li>
+  <li><b>th</b>: table heading, this has a attribute called scope which takes value <b>col</b> and <b>row</b></li>
+  <li><b>scope</b> This is an attribute used to define the heading of the column or a row, and it takes the value <b>row</b> or <b>col</b></li>
+</ul>
+<h3>A simple Example for table using tags table, tr, td</h3>
+<table>
+  <tr>
+    <td>4 |</td>
+    <td>5 |</td>
+    <td>6 </td>
+  </tr>
+  <tr>
+    <td>8 |</td>
+    <td>10 |</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>15</td>
+    <td>18</td>
+  </tr>
+</table>
+<h3>A bit more</h3>
+<hr />
+  <table>
+    <tr>
+      <th scope="col">MemberStatus</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Date</th>
+    </tr>
+    <tr>
+      <th scope="row">Manager</th>
+      <td>Ramya</td>
+      <td>32</td>
+      <td>11-11-2010</td>
+    </tr>
+    <tr>
+      <th scope="row">Ass.Manager</th>
+      <td>Sujana</td>
+      <td>28</td>
+      <td>8-1-2018</td>
+    </tr>
+    <tr>
+      <th scope="row">Employee</th>
+      <td>Sidney</td>
+      <td>24</td>
+      <td>6-2-2020</td>
+    </tr>
+  </table>
+<hr />
+<h3>Using the attribute colspan to extend the row value to more than one column</h3>
+<hr />
+<table>
+  <tr>
+    <th scope="col" >Day</th>
+    <th scope="col">9AM</th>
+    <th scope="col">10AM</th>
+    <th scope="col">11AM</th>
+    <th scope="col">12AM</th>
+    <th scope="col">1PM</th>
+  </tr>
+  <tr>
+    <th scope="row">Monday</th>
+    <td colspan="2">Geography</td>
+    <td>Maths</td>
+    <td>Science</td>
+    <td>Lunch</td>
+  </tr>
+  <tr>
+    <th scope="row">Tuesday</th>
+    <td colspan="3">Gym</td>
+    <td>Maths</td>
+    <td>lunch</td>
+  </tr>
+</table>
+<hr />
+<h3>Using rowspan</h3>
+<hr />
+<table>
+<tr>
+  <th scope="col">Timing</th>
+  <th scope="col">Gemini</th>
+  <th scope="col">MAA</th>
+  <th scope="col">ZEE</th>
+</tr>
+  <tr>
+    <th scope="row">6AM-7AM</th>
+    <td rowspan="2" colspan="1">Comedy</td>
+    <td>News</td>
+    <td>Movie</td>
+  </tr>
+  <tr>
+    <th scope="row">7AM-8AM</th>
+    <td>Movie</td>
+    <td>Music</td>
+  </tr>
+</table>
+<hr />
+<h4>The value of scope that is row or col doesn't effect much but its useful for screen readers</h4>
+<table>
+  <tr>
+    <th scope="row">Sip</th>
+    <th scope="row">Sip</th>
+    <td>sai</td>
+  </tr>
+  <th scope="col">Sip</th>
+</table>
+<hr />
+
+<h3>Long Tables</h3>
+<ol>
+  <li><b>thead</b> is the inline element for the table tag, which has all the column headings </li>
+  <li><b>tbody</b> is the inline element for the table tag, which has all the content</li>
+  <li><b>tfoot</b> is the inline element for the table tag, which can final outputs </li>
+</ol>
+<hr />
+<table>
+  <thead>
+  <tr>
+    <th>StudentNo</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th scope="row">1</th>
+    <td>21010</td>
+    <td>Sai</td>
+    <td>18</td>
+    <td>11-10-2010</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <th scope="row">TotalNoOfStudent</th>
+    <td colspan="4">1</td>
+  </tr>
+  </tfoot>
+</table>
+<hr />
+<h3>Old attributes before html5</h3>
+<p>These attributes are usually placed in table tag but not nessarily</p>
+<ol>
+  <li><b>width</b> is a attribute controls the size of the cell</li>
+  <li><b>cellpadding</b> is an attribute that does padding of the content</li>
+  <li><b>cellspacing</b> is an attribute that does the space between the cell</li>
+  <li><b>border</b> this gives a border of said value</li>
+  <li><b>bgcolor</b> this sets the color of the cell</li>
+</ol>
+
+<hr />
+<table width="150" cellspacing="2" cellpadding="10" border="2" bgcolor="#faebd7">
+  <tr bgcolor="aqua">
+    <th scope="col" width="150">SlNo</th>
+    <th scope="col">Anime</th>
+    <th scope="col">Rating</th>
+  </tr>
+  <tr>
+    <th scope="row">1</th>
+    <td>One Piece</td>
+    <td>Legendary</td>
+  </tr>
+  <tr>
+    <th scope="row">2</th>
+    <td>Naruto</td>
+    <td>Epic</td>
+  </tr>
+</table>
+<hr />
+
+</body>
+</html>

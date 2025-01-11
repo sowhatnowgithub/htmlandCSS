@@ -1,0 +1,178 @@
+/**/
+h3 ~ p > i {
+    font-family: "Times New Roman", Times, serif;
+    color: blue; /*To represent CSS property*/
+}
+
+#none {
+    list-style-type: none;
+}
+#disc {
+    list-style-type: disc;
+}
+#circle {
+    list-style-type: circle;
+}
+#square {
+    list-style-type: square;
+}
+#decimal {
+    list-style-type: decimal;
+}
+#decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+}
+#lower-alpha {
+    list-style-type: lower-alpha;
+}
+#upper-alpha {
+    list-style-type: upper-alpha;
+}
+#lower-roman {
+    list-style-type: lower-roman;
+}
+#upper-roman {
+    list-style-type: upper-roman;
+}
+#bullet-image {
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z"></path></svg>');
+}
+#outside {
+    width: 150px;
+    list-style-position: outside;
+}
+#outside li {
+    margin: 10px;
+}
+#inside li {
+    margin: 10px;
+}
+#inside {
+    width: 150px;
+    list-style-position: inside;
+}
+
+#t1 {
+    width: 600px;
+}
+#t1 th,
+td {
+    padding: 5px;
+}
+#t1 th {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-top: 1px solid grey;
+    border-bottom: 2px solid black;
+}
+table .money {
+    text-align: right;
+}
+tr.even {
+    background-color: rgb(172, 170, 170);
+}
+td:hover {
+    background-color: antiquewhite;
+}
+.t2 {
+    border-spacing: 5px 15px;
+}
+.t2 td {
+    border: 2px solid black;
+    background-color: blue;
+}
+.t3 {
+    border-collapse: collapse;
+}
+.t3 td {
+    border: 2px solid black;
+    background-color: blue;
+}
+
+input {
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+input:focus {
+    border: 3px solid red;
+}
+input#email {
+    background-image: url(images/gmail_logo.png);
+}
+
+input#submit {
+    background-color: grey;
+    text-transform: uppercase;
+    padding: 2px;
+    letter-spacing: 0.1em;
+    border-bottom: 3px solid black;
+    text-shadow: 2px 3px 4px;
+}
+input#submit:hover {
+    background-color: silver;
+}
+
+form#newsletter legend {
+    text-transform: uppercase;
+    border: 3px solid black;
+    background-color: silver;
+    padding: 4px;
+    text-align: left;
+}
+form#newsletter label,
+input {
+    display: inline;
+}
+form#newsletter fieldset {
+    font-family: "Times New Roman", Times, serif;
+    color: green;
+    width: 200px;
+    text-align: right;
+}
+#signup {
+    letter-spacing: 0.2em;
+    padding: 3px;
+    color: white;
+}
+
+div {
+    border-bottom: 1px solid #efefef;
+    margin: 10px;
+    padding-bottom: 10x;
+    width: 260px;
+}
+.title {
+    float: left; /*float is used to move the titles */
+}
+#submit {
+    text-align: right;
+}
+#submit input {
+    background-color: grey;
+    text-transform: uppercase;
+    padding: 2px;
+    letter-spacing: 0.1em;
+    border-bottom: 3px solid black;
+    text-shadow: 2px 3px 4px;
+}
+ul#copy {
+    border: 1px solid black;
+    width: 50%;
+    list-style-type: none;
+    background-color: rgb(227, 223, 220);
+    margin: 3px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-style: normal;
+    color: rgb(227, 83, 134);
+    cursor: wait;
+}
+a {
+    cursor: help;
+}

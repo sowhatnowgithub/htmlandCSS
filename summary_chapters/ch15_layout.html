@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <head>
+        <title>layout</title>
+        <meta http-equiv="author" content="sai" />
+        <style>
+            body {
+                background-color: brown;
+            }
+            p {
+                font-family: "Gill Sans", "Gill Sans MT", Calibri,
+                    "Trebuchet MS", sans-serif;
+                font-size: 20px;
+                color: white;
+            }
+            div > div {
+                display: inline;
+                color: orange;
+                padding: 5px;
+                border: 1px solid black;
+                margin: 2px;
+            }
+            div > div > h3 {
+                text-transform: uppercase;
+            }
+            div > div > p {
+                color: white;
+                width: 10em;
+            }
+            div {
+                display: flex;
+                padding: 5px;
+                border: 2px solid white;
+            }
+            .heading {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-style: italic;
+                color: darkblue;
+                text-decoration: underline white;
+            }
+            p > i {
+                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
+                    serif;
+                color: silver;
+                font-size: 25px;
+            }
+            p.example {
+                position: relative;
+                top: 10px;
+                left: 100px;
+            }
+            div.ex1 h2 {
+                position: absolute;
+                left:80%;
+            }
+            div.ex1 p {
+                width: 80%;
+            }
+            .ex2 {
+                position: fixed;
+                top: 0px;
+                background-color: blue;
+                height: 50px;
+                width: 100%;
+                margin: 0px;
+                padding: 10px;
+                left: 20px;
+            }
+            .ex2 p {
+                color: wheat;
+            }
+        </style>
+        <body>
+            <h1 style="margin-top: 100px;">Positioning of Elements</h1>
+            <h2>Positioning schemes</h2>
+            <div>
+                <div>
+                    <h3>Normal-FLow</h3>
+                    <p>
+                        Every block-level element appears on a new line, causing
+                        each item to appear lower down the page than the
+                        previous one. Even if you specify the width of the boxes
+                        and there is space for two elements to sit side-byside,
+                        they will not appear next to each other. This is the
+                        default behavior (unless you tell the browser to do
+                        something else).
+                    </p>
+                </div>
+                <div>
+                    <h3>Relative Positioning</h3>
+                    <p>
+                        This moves an element from the position it would be in
+                        normal flow, shifting it to the top, right, bottom, or
+                        left of where it would have been placed. This does not
+                        affect the position of surrounding elements; they stay
+                        in the position they would be in in normal flow.
+                    </p>
+                </div>
+                <div>
+                    <h3>Absolute Positioning</h3>
+                    <p>
+                        This positions the element in relation to its containing
+                        element. It is taken out of normal flow, meaning that it
+                        does not affect the position of any surrounding elements
+                        (as they simply ignore the space it would have taken
+                        up). Absolutely positioned elements move as users scroll
+                        up and down the page.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Fixed Positioning</h3>
+                    <p>This is a form of absolute
+            positioning that positions
+            the element in relation to the
+            browser window, as opposed
+            to the containing element.
+            Elements with fixed positioning
+            do not affect the position of
+            surrounding elements and they
+            do not move when the user
+            scrolls up or down the page.</p>
+                </div>
+                <div>
+                    <h3>Floating ELements</h3>
+                    <p>Floating an element allows
+                    you to take that element out
+                    of normal flow and position
+                    it to the far left or right of a
+                    containing box. The floated
+                    element becomes a block-level
+                    element around which other
+                    content can flow.</p>
+                </div>
+            </div>
+            <h3 style="color: darkblue; font-size: 30px; text-decoration: underline white; ">box offset properties</h3>
+            <p>These properties help in positioning the box, they are <i>top, left, right, bottom</i></p>
+            <h3 class="heading">Normal Flow</h3>
+            <p><i>positioin: static;</i></p>
+            <h3 class="heading">Relative Positioning</h3>
+            <p><i>position: relative;</i></p>
+            <p>Well this is an example text that is in normal flow</p>
+            <p class="example">
+                <i>position: relative;<br>top: 10px;<br>left: 100px;</br></i>
+                Well this is a an example text that has been relative positioned by the above css property,
+            </p>
+            <p><b>It has to be noted that <i style="color: blue;">position</i> property has to be specified in order for this box to relative postion</b></p>
+            <h3 class="heading">Absolute Positioning</h3>
+            <p><i>position: absolute;</i></p>
+            <div class="ex1">
+                <h2>The bicycle</h2>
+                <p>The bicycle has been positioned to analysed to see how absolute positioning works</p>
+            </div>
+            <h3 class="heading">Fixed Positioing</h3>
+            <p><i>position: fixed;</i></p>
+            <div class="ex2">
+                <p>THis is an the fixed positiong</p>
+            </div>
+            <h3 class="heading">z-index</h3>
+            <p><i>z-index: value;</i> value gives the priority for the box elements to appear on top</p>
+            <p>When you use relative, fixed, or
+            absolute positioning, boxes can
+            overlap. If boxes do overlap, the
+            elements that appear later in the
+            HTML code sit on top of those
+            that are earlier in the page.</p>
+            <p><b style="color: blue;">z-index</b> is sometimes reffered to as stacking context</p>
+            <h3 class="heading">Floating Elements</h3>
+        </body>
+    </head>
+</html>

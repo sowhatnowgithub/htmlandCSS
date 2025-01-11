@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description"
+        content="Summary of the chapter09 of Jon Duckett book on html and CSS"
+        />
+        <meta name="robots"
+        content="nofollow"
+        />
+        <meta http-equiv="author"
+        content="sai"
+        />
+        <meta http-equiv="pragma"
+        content="no-cache"
+        />
+        <title>Flash, Video and Audio additon to html</title>
+    </head>
+    <body>
+        <h3>flash</h3>
+        <p>Its a way to show animations on the website, now it is not much in use</p>
+        <p>Then we should a javascript to play the video, see the screenshot <a href="images/flash_js.png" alt="using a flash video, in html, the code picture" target="_blank" >click here</a></a></p>
+        <h3>video</h3>
+        <p>This <b>video</b> tag introduced in the <strong>html5</strong> is widely used, the video format have to supported by the browser</p> 
+        <p><b>The usage of the video can be done in two ways</b></p>
+        <ol>
+            <li><b>Using Hosted Video Services</b>: This method is used to use platforms liek <strong>youtube or vimeo</strong> <br />to link the video to website, this has disadvantages and advantages, Check them online</li>
+            <li><b>Locally uploading the video</b> ,and then loading it, this method takes time when have to load via server-side</li>
+        </ol>
+        <ul>
+            <li><b>video</b>: this is the tag used for the <strong>video</strong></li>
+            <li><b>src</b>: This attribute provides either the <strong>absolute</strong> or <strong>relative</strong> <strong>URL</strong> for the <strong>filepath</strong></li>
+            <li><b>poster</b>: This attribute allows for the image to be displayed while the video loads, this <strong>attributes</strong> takes the <strong>URL</strong> for the image <strong>filepath</strong></li>
+            <li><b>width, height</b></li>
+            <li><b>controls</b>: this attribute takes no value, just by placing them in the tag is <q>on</q>, if not placed then <q>off</q></li>
+            <li><b>autoplay</b>: This attribute takes no value, same like <strong>controls</strong></li>
+            <li><b>loop</b>: This attribute takes no value, this means the video plays after the video ends in <strong>loop</strong></li>
+            <li><b>preload</b>: This attribute tells the browser what to do when the page loads, it can have three values <ol>
+                <li><b>none</b>: This value tells, the browser should not load the video until the user presses play</li>
+                <li><b>auto</b>: This value tells, the brower should download the video when the page loads</li>
+                <li><b>metadata</b>: This value tells, the browser should just collect information such as the size, first frame, tract list and duration</li>
+            </ol></li>
+            <li><b>source</b>: This inline tag replaces the <strong>src</strong> attribute of the <strong>video</strong> tag and it has the attribute <strong>src</strong> which takes the <strong>value</strong> of the <strong>filepath</strong>, <br />This <strong>source</strong> tag is useful, as we can place multiple video formats in differt <strong>source</strong> inline tags, <i>Ex:</i><a href="images/img10.png" alt="example screenshot of the use case of resource">screenshot</a> <ol>
+                <li><b>type</b>: This is an attribute of the tag <strong>source</strong> which tells the borwser what <strong>video format</strong> is the <strong>video</strong>, otherwise the browser will download some video and checks whether it can play or not </li>
+                <p><i>Ex:</i><a href="images/img12.png" alt="using type attribute with codecs as a value" target="_blank">screenshot</a></p>
+                <li><b>codecs</b>: This codecs used within the <strong>type</strong> attribute of the <strong>source</strong> tag ,The codec that was used to
+                    encode the video is supplied
+                    within the type attribute. Note
+                    the use of single quotes, as well
+                    as double quotes in the type
+                    attribute, when it is supplied.</li>
+            </ol></li>
+        </ul>
+        <hr>
+        <video src="videos/video1.mp4" poster="" width="250" controls loop autoplay preload="none"><p cite="pexel.com" >Tell</p></video>
+        <video width="250" controls loop autoplay preload="metadata"><source src="videos/video1.mp4" type="video/mp4" /></video>
+        <hr>
+    <h3>Audio</h3>
+    <p>The <strong>audio</strong> can also be used to embed into the website by using <strong>audio</strong> tag</p>
+    <ol>
+        <p>You can use three ways to upload the <strong>audio</strong></p>
+        <li><b>Use a Hosted Service</b>: There are several sites that allow you to upload your audio and provide a player, which can embed in your page</li>
+        <li><b>Use flash</b>: <i>Ex:</i> <a href="images/img11.png" alt="using flash to embed audio into the website" target="_blank">screenshot</a></li>
+        <li><b>Use audio</b> tag</li>
+    </ol>
+    <p>using <b>audio</b> tag</p>
+    <ol>
+        <li><b>src</b>: This attributes is known</li>
+        <li><b>controls</b>: THis shows the options to control the video</li>
+        <li><b>autoplay</b>: This attribute lets the audio play automatically when the browser reloads </li>
+        <li><b>preload</b>: Same as video </li>
+        <li><b>loop</b></li>
+        <li><b>source</b>: Same as video and takes same value</li>
+    </ol>
+    </body> 
+</html>
